@@ -1,3 +1,9 @@
+import {
+  Env 
+} from '@/env'
+
+const env = new Env()
+
 export const loggerConfig = {
   transport: {
     target: 'pino-pretty',
@@ -14,6 +20,6 @@ export const fastifyConfig = {
 }
 
 export const listenParams = {
-  port: 3000,
-  host: 'localhost'
+  port: env.values.PORT,
+  host: env.values.HOST
 }
