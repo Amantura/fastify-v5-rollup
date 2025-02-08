@@ -2,11 +2,11 @@ import {
   Env
 } from '@/env'
 import {
-  Server 
+  Server
 } from '@/server'
 
 new Env()
-  .init()
+  .validate()
   .then(() => {
     const server = new Server()
     server.init()

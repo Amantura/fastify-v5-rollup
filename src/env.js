@@ -33,7 +33,7 @@ export class Env {
     return this.#values
   }
 
-  init() {
+  validate() {
     return new Promise((resolve) => {
       const { success, error, data } = envSchema.safeParse(this.#values)
 
