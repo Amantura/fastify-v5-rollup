@@ -24,7 +24,6 @@ import Swagger from '@fastify/swagger'
 import SwaggerUi from '@fastify/swagger-ui'
 import Cors from '@fastify/cors'
 
-
 export class Server {
   constructor() {
     this.fastify = new Fastify(fastifyConfig)
