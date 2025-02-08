@@ -31,7 +31,7 @@ const onWarn = (warning, next) => {
   next(warning)
 }
 
-const ROLLUP_WATCH = process.env?.ROLLUP_WATCH === 'true'
+const ROLLUP_WATCH = process.env.ROLLUP_WATCH === 'true'
 
 export default defineConfig({
   input: './src/index.js',
