@@ -1,0 +1,43 @@
+{
+  "name": "postomat-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./output/index.js",
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "lint:fix": "npx eslint --fix --ext .js ."
+  },
+  "engines": {
+    "node": ">=v22.0.0"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@rollup/plugin-alias": "^5.1.1",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-run": "^3.1.0",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
+    "rollup": "^4.34.5",
+    "rollup-plugin-dotenv": "^0.5.1",
+    "rollup-plugin-node-externals": "^8.0.0",
+    "source-map-support": "^0.5.21"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.2",
+    "@fastify/formbody": "^8.0.2",
+    "@fastify/multipart": "^9.0.3",
+    "@fastify/swagger": "^9.4.2",
+    "@fastify/swagger-ui": "^5.2.1",
+    "fastify": "^5.2.1",
+    "fastify-type-provider-zod": "^4.0.2",
+    "pino-pretty": "^13.0.0",
+    "zod": "^3.24.1"
+  }
+}
