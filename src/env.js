@@ -14,8 +14,6 @@ const envSchema = z.object({
 })
 
 export class Env {
-  static instance
-
   #values = {
   }
   constructor() {
