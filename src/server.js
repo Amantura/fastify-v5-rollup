@@ -37,6 +37,8 @@ export class Server {
   }
 
   start() {
+    this.init()
+
     this.fastify
       .listen(listenParams)
       .catch((error) => {
